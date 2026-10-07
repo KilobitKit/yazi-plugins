@@ -427,7 +427,7 @@ local function process_fetch_job(job)
 	if not repo then
 		remove(tostring(cwd))
 		for _, file in ipairs(job.files) do
-			coroutine.yield(file, {})
+			coroutine.yield(file, { retry = true })
 		end
 		return
 	end
