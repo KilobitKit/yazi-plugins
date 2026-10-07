@@ -1,4 +1,4 @@
---- @since 26.5.6
+--- @since 26.8.15
 --- vscode-git-colors.yazi
 ---
 --- Colors file and directory NAMES by their git status, VS Code style:
