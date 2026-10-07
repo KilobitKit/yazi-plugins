@@ -476,7 +476,7 @@ local function process_fetch_job(job)
 	add(tostring(cwd), repo, changed)
 
 	for _, file in ipairs(job.files) do
-		coroutine.yield(file, {})
+		coroutine.yield(file, { retry = true })
 	end
 end
 
